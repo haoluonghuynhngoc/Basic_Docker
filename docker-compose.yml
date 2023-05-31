@@ -1,0 +1,15 @@
+version: '3.1'
+services:
+  studentDb:
+    image: mysql:8.0.13
+    environment:
+      MYSQl_USER: root
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: student_managment
+      SPRING_DATASOURCE_URL: jdbc:mysql://mssql:3306/MYSQL_DATABASE
+      SPRING_DATABASE_USERNAME: root
+      SPRING_DATABASE_PASSWORD: root
+    ports:
+      - "3366:3306"
+
+
